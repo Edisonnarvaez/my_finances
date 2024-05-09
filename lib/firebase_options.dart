@@ -65,4 +65,5 @@ class DefaultFirebaseOptions {
     storageBucket: 'my-finances-c49d5.appspot.com',
     iosBundleId: 'com.example.myFinances',
   );
+
 }
