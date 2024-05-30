@@ -7,8 +7,6 @@ import 'package:intl/intl.dart' as intl;
 
 import 'app_localizations_en.dart';
 import 'app_localizations_es.dart';
-import 'app_localizations_it.dart';
-import 'app_localizations_pt.dart';
 
 /// Callers can lookup localized strings with an instance of AppLocalizations
 /// returned by `AppLocalizations.of(context)`.
@@ -92,124 +90,8 @@ abstract class AppLocalizations {
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
     Locale('en'),
-    Locale('es'),
-    Locale('it'),
-    Locale('pt')
+    Locale('es')
   ];
-
-  /// No description provided for @title.
-  ///
-  /// In es, this message translates to:
-  /// **'Finanzap'**
-  String get title;
-
-  /// No description provided for @onboarding_1.
-  ///
-  /// In es, this message translates to:
-  /// **'Bienvenido a Finanzap'**
-  String get onboarding_1;
-
-  /// No description provided for @onboarding_2.
-  ///
-  /// In es, this message translates to:
-  /// **'Rastrea tus finanzas fácilmente'**
-  String get onboarding_2;
-
-  /// No description provided for @onboarding_3.
-  ///
-  /// In es, this message translates to:
-  /// **'Comienza ahora'**
-  String get onboarding_3;
-
-  /// No description provided for @login.
-  ///
-  /// In es, this message translates to:
-  /// **'{name, select, loginTitle{Bienvenido de nuevo,} loginSubTitle{Descubra opciones ilimitadas y una comodidad inigualable.} email{Correo electrónico} password{Contraseña} rememberMe{Recuérdame} forgetPassword{Recuperar contraseña?} signIn{Iniciar sesión} createAccount{Crear cuenta} orSignInWith{O inicie sesión con} other{}}'**
-  String login(String name);
-
-  /// No description provided for @register.
-  ///
-  /// In es, this message translates to:
-  /// **'Registrarse'**
-  String get register;
-
-  /// No description provided for @forgot_password.
-  ///
-  /// In es, this message translates to:
-  /// **'Olvidé mi Contraseña'**
-  String get forgot_password;
-
-  /// No description provided for @email.
-  ///
-  /// In es, this message translates to:
-  /// **'Correo Electrónico'**
-  String get email;
-
-  /// No description provided for @password.
-  ///
-  /// In es, this message translates to:
-  /// **'Contraseña'**
-  String get password;
-
-  /// No description provided for @confirm_password.
-  ///
-  /// In es, this message translates to:
-  /// **'Confirmar Contraseña'**
-  String get confirm_password;
-
-  /// No description provided for @name.
-  ///
-  /// In es, this message translates to:
-  /// **'Nombre Completo'**
-  String get name;
-
-  /// No description provided for @phone.
-  ///
-  /// In es, this message translates to:
-  /// **'Número de Teléfono'**
-  String get phone;
-
-  /// No description provided for @dob.
-  ///
-  /// In es, this message translates to:
-  /// **'Fecha de Nacimiento'**
-  String get dob;
-
-  /// No description provided for @currency.
-  ///
-  /// In es, this message translates to:
-  /// **'Moneda Preferida'**
-  String get currency;
-
-  /// No description provided for @save.
-  ///
-  /// In es, this message translates to:
-  /// **'Guardar'**
-  String get save;
-
-  /// No description provided for @cancel.
-  ///
-  /// In es, this message translates to:
-  /// **'Cancelar'**
-  String get cancel;
-
-  /// No description provided for @income.
-  ///
-  /// In es, this message translates to:
-  /// **'Ingresos'**
-  String get income;
-
-  /// No description provided for @expense.
-  ///
-  /// In es, this message translates to:
-  /// **'Gastos'**
-  String get expense;
-
-  /// No description provided for @recurring_expense.
-  ///
-  /// In es, this message translates to:
-  /// **'Gastos Periódicos'**
-  String get recurring_expense;
 
   /// No description provided for @date.
   ///
@@ -217,35 +99,53 @@ abstract class AppLocalizations {
   /// **'Fecha'**
   String get date;
 
-  /// No description provided for @type_of_income.
+  /// No description provided for @common.
   ///
   /// In es, this message translates to:
-  /// **'Tipo de Ingreso'**
-  String get type_of_income;
+  /// **'{name, select, amount{Monto} save{Guardar} cancel{Cancelar} other{}}'**
+  String common(String name);
 
-  /// No description provided for @type_of_expense.
+  /// No description provided for @expense.
   ///
   /// In es, this message translates to:
-  /// **'Tipo de Gasto'**
-  String get type_of_expense;
+  /// **'{name, select, expenseTitle{Gastos} type_of_expense{Tipo de Gasto} other{}}'**
+  String expense(String name);
 
-  /// No description provided for @amount.
+  /// No description provided for @recurring_expense.
   ///
   /// In es, this message translates to:
-  /// **'Monto'**
-  String get amount;
+  /// **'{name, select, recurringExpenseTitle{Gastos Periódicos} type_of_expense{Tipo de Gasto Periódico} frequency{Periodicidad} other{}}'**
+  String recurring_expense(String name);
 
-  /// No description provided for @history.
+  /// No description provided for @income.
   ///
   /// In es, this message translates to:
-  /// **'Historial'**
-  String get history;
+  /// **'{name, select, incomeTitle{Ingresos} type_of_income{Tipo de Ingreso} frequency{Periodicidad} other{}}'**
+  String income(String name);
+
+  /// No description provided for @main.
+  ///
+  /// In es, this message translates to:
+  /// **'{name, select, mainTitle{Menú Principal} income{Ingresos} recurring_expense{Gastos Periódicos} expense{Gastos} history{Historial} other{}}'**
+  String main(String name);
+
+  /// No description provided for @register.
+  ///
+  /// In es, this message translates to:
+  /// **'{name, select, registerTitle{Registrarse} name{Nombre Completo} email{Correo} phone{Número de Teléfono} dob{Fecha de Nacimiento} currency{Moneda Preferida} password{Contraseña} confirm_password{Confirmar Contraseña} other{}}'**
+  String register(String name);
 
   /// No description provided for @onboarding.
   ///
   /// In es, this message translates to:
-  /// **'{name, select, onBoardingTitle1{Elija su producto} onBoardingSubTitle1{Bienvenido a un mundo de opciones ilimitadas: ¡su producto perfecto le espera!} onBoardingTitle2{Seleccione el método de pago} onBoardingSubTitle2{Para realizar transacciones sin problemas, elija su forma de pago} onBoardingTitle3{Entrega a domicilio} onBoardingSubTitle3{¡Entrega rápida, segura y sin contacto!} other{}}'**
+  /// **'{name, select, onBoardingTitle1{} onBoardingSubTitle1{} onBoardingTitle2{¡Bienvenido a FinanZap!} onBoardingSubTitle2{Tu app personal para controlar tus finanzas de manera rápida y sencilla.} onBoardingTitle3{Monitorea y Controla} onBoardingSubTitle3{Registra tus ingresos y gastos para mantener un seguimiento detallado de tus finanzas.} other{}}'**
   String onboarding(String name);
+
+  /// No description provided for @login.
+  ///
+  /// In es, this message translates to:
+  /// **'{name, select, loginTitle{Bienvenido de nuevo,} loginSubTitle{Descubra opciones ilimitadas y una comodidad inigualable.} email{Correo electrónico} password{Contraseña} rememberMe{Recuérdame} forgetPassword{Recuperar contraseña?} signIn{Iniciar sesión} createAccount{Crear cuenta} orSignInWith{O inicie sesión con} other{}}'**
+  String login(String name);
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
@@ -257,7 +157,7 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> 
   }
 
   @override
-  bool isSupported(Locale locale) => <String>['en', 'es', 'it', 'pt'].contains(locale.languageCode);
+  bool isSupported(Locale locale) => <String>['en', 'es'].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
@@ -270,8 +170,6 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
   switch (locale.languageCode) {
     case 'en': return AppLocalizationsEn();
     case 'es': return AppLocalizationsEs();
-    case 'it': return AppLocalizationsIt();
-    case 'pt': return AppLocalizationsPt();
   }
 
   throw FlutterError(

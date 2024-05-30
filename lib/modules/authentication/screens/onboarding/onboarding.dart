@@ -31,12 +31,12 @@ class OnBoardingScreen extends StatelessWidget {
             PageView(
               controller: controller.pageController,
               onPageChanged: controller.updatePageIndicator,
-              children: const [
-                OnBoardingPageP(
+              children: [
+                const OnBoardingPageP(
                   image: AppImage.onBoardingImage1,
                   image2: AppImage.onBoardingImage1a,
                 ),
-                OnBoardingPage(
+                OnBoardingPage (
                   image: AppImage.onBoardingImage2,
                   title: AppText.onBoardingTitle2,
                   subTitle: AppText.onBoardingSubTitle2,
