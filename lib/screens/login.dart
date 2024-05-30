@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:my_finances/screens/forgot_password.dart';
-import 'package:my_finances/screens/register.dart';
+import 'package:my_finances/modules/authentication/screens/login/forgot_password.dart';
+import 'package:my_finances/modules/authentication/screens/login/register.dart';
 
 class LoginScreen extends StatelessWidget {
   @override

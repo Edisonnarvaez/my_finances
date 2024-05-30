@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:my_finances/screens/changePasswordScreen.dart';
+import 'package:my_finances/modules/authentication/screens/login/changePasswordScreen.dart';
 
 class ProfileScreen extends StatelessWidget {
   @override
