@@ -93,17 +93,149 @@ abstract class AppLocalizations {
     Locale('es')
   ];
 
-  /// No description provided for @appTitle.
+  /// No description provided for @title.
   ///
   /// In es, this message translates to:
-  /// **'Mi Aplicacion'**
-  String get appTitle;
+  /// **'Finanzap'**
+  String get title;
 
-  /// No description provided for @content.
+  /// No description provided for @onboarding_1.
   ///
   /// In es, this message translates to:
-  /// **'Hola'**
-  String get content;
+  /// **'Bienvenido a Finanzap'**
+  String get onboarding_1;
+
+  /// No description provided for @onboarding_2.
+  ///
+  /// In es, this message translates to:
+  /// **'Rastrea tus finanzas fácilmente'**
+  String get onboarding_2;
+
+  /// No description provided for @onboarding_3.
+  ///
+  /// In es, this message translates to:
+  /// **'Comienza ahora'**
+  String get onboarding_3;
+
+  /// No description provided for @login.
+  ///
+  /// In es, this message translates to:
+  /// **'Iniciar Sesión'**
+  String get login;
+
+  /// No description provided for @register.
+  ///
+  /// In es, this message translates to:
+  /// **'Registrarse'**
+  String get register;
+
+  /// No description provided for @forgot_password.
+  ///
+  /// In es, this message translates to:
+  /// **'Olvidé mi Contraseña'**
+  String get forgot_password;
+
+  /// No description provided for @email.
+  ///
+  /// In es, this message translates to:
+  /// **'Correo Electrónico'**
+  String get email;
+
+  /// No description provided for @password.
+  ///
+  /// In es, this message translates to:
+  /// **'Contraseña'**
+  String get password;
+
+  /// No description provided for @confirm_password.
+  ///
+  /// In es, this message translates to:
+  /// **'Confirmar Contraseña'**
+  String get confirm_password;
+
+  /// No description provided for @name.
+  ///
+  /// In es, this message translates to:
+  /// **'Nombre Completo'**
+  String get name;
+
+  /// No description provided for @phone.
+  ///
+  /// In es, this message translates to:
+  /// **'Número de Teléfono'**
+  String get phone;
+
+  /// No description provided for @dob.
+  ///
+  /// In es, this message translates to:
+  /// **'Fecha de Nacimiento'**
+  String get dob;
+
+  /// No description provided for @currency.
+  ///
+  /// In es, this message translates to:
+  /// **'Moneda Preferida'**
+  String get currency;
+
+  /// No description provided for @save.
+  ///
+  /// In es, this message translates to:
+  /// **'Guardar'**
+  String get save;
+
+  /// No description provided for @cancel.
+  ///
+  /// In es, this message translates to:
+  /// **'Cancelar'**
+  String get cancel;
+
+  /// No description provided for @income.
+  ///
+  /// In es, this message translates to:
+  /// **'Ingresos'**
+  String get income;
+
+  /// No description provided for @expense.
+  ///
+  /// In es, this message translates to:
+  /// **'Gastos'**
+  String get expense;
+
+  /// No description provided for @recurring_expense.
+  ///
+  /// In es, this message translates to:
+  /// **'Gastos Periódicos'**
+  String get recurring_expense;
+
+  /// No description provided for @date.
+  ///
+  /// In es, this message translates to:
+  /// **'Fecha'**
+  String get date;
+
+  /// No description provided for @type_of_income.
+  ///
+  /// In es, this message translates to:
+  /// **'Tipo de Ingreso'**
+  String get type_of_income;
+
+  /// No description provided for @type_of_expense.
+  ///
+  /// In es, this message translates to:
+  /// **'Tipo de Gasto'**
+  String get type_of_expense;
+
+  /// No description provided for @amount.
+  ///
+  /// In es, this message translates to:
+  /// **'Monto'**
+  String get amount;
+
+  /// No description provided for @history.
+  ///
+  /// In es, this message translates to:
+  /// **'Historial'**
+  String get history;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

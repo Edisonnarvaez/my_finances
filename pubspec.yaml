@@ -29,6 +29,7 @@ dependencies:
   get_storage: ^2.1.1
   cloud_firestore: ^4.17.3
   firebase_core: ^2.31.0
+  syncfusion_flutter_charts: ^25.2.6
 
 # ---------- PACKAGES DEV ----------
 dev_dependencies:
@@ -64,3 +65,9 @@ flutter:
           weight: 600
         - asset: assets/fonts/Poppins-Bold.ttf
           weight: 800
+
+
+l10n:
+    arb-dir: lib/l10n
+    template-arb-file: app_en.arb
+    output-localization-file: app_localizations.dart
