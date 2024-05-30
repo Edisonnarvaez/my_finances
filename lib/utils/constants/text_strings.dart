@@ -4,7 +4,6 @@ import 'package:get/get.dart';
 class AppText {
   AppText._();
 
-
   // OnBoarding texts
   static String onBoardingTitle1 =
       AppLocalizations.of(Get.context!).onboarding('onBoardingTitle1');
@@ -38,4 +37,56 @@ class AppText {
       AppLocalizations.of(Get.context!).login('createAccount');
   static String orSignInWith =
       AppLocalizations.of(Get.context!).login('orSignInWith');
+
+  static String date =
+      AppLocalizations.of(Get.context!).common('date');
+  static String amount =
+      AppLocalizations.of(Get.context!).common('amount');
+  static String save =
+      AppLocalizations.of(Get.context!).common('save');
+  static String cancel =
+      AppLocalizations.of(Get.context!).common('cancel');
+  
+  static String expenseTitle =
+      AppLocalizations.of(Get.context!).expense('expenseTitle');
+  static String type_of_expense =
+      AppLocalizations.of(Get.context!).expense('type_of_expense');
+
+  static String recurringExpenseTitle =
+      AppLocalizations.of(Get.context!).recurring_expense('recurringExpenseTitle');
+  
+  static String frequency =
+      AppLocalizations.of(Get.context!).recurring_expense('frequency');
+
+  static String incomeTitle =
+      AppLocalizations.of(Get.context!).income('incomeTitle');
+  static String type_of_income =
+      AppLocalizations.of(Get.context!).income('type_of_income');
+      
+  static String mainTitle =
+      AppLocalizations.of(Get.context!).main('mainTitle');
+  static String income =
+      AppLocalizations.of(Get.context!).main('income');
+  static String recurring_expense =
+      AppLocalizations.of(Get.context!).main('recurring_expense');
+  static String expense =
+      AppLocalizations.of(Get.context!).main('expense');
+  static String history =
+      AppLocalizations.of(Get.context!).main('history');
+
+  static String registerTitle =
+      AppLocalizations.of(Get.context!).register('registerTitle');
+  static String name =
+      AppLocalizations.of(Get.context!).register('name');
+  
+  static String phone =
+      AppLocalizations.of(Get.context!).register('phone');
+  static String dob =
+      AppLocalizations.of(Get.context!).register('dob');
+  static String currency =
+      AppLocalizations.of(Get.context!).register('currency');
+  
+  static String confirm_password =
+      AppLocalizations.of(Get.context!).register('confirm_password');
+
 }

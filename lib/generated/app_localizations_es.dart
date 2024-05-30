@@ -57,7 +57,6 @@ class AppLocalizationsEs extends AppLocalizations {
       {
         'incomeTitle': 'Ingresos',
         'type_of_income': 'Tipo de Ingreso',
-        'frequency': 'Periodicidad',
         'other': '',
       },
     );
@@ -87,11 +86,9 @@ class AppLocalizationsEs extends AppLocalizations {
       {
         'registerTitle': 'Registrarse',
         'name': 'Nombre Completo',
-        'email': 'Correo',
         'phone': 'Número de Teléfono',
         'dob': 'Fecha de Nacimiento',
         'currency': 'Moneda Preferida',
-        'password': 'Contraseña',
         'confirm_password': 'Confirmar Contraseña',
         'other': '',
       },
@@ -104,8 +101,6 @@ class AppLocalizationsEs extends AppLocalizations {
     String _temp0 = intl.Intl.selectLogic(
       name,
       {
-        'onBoardingTitle1': '',
-        'onBoardingSubTitle1': '',
         'onBoardingTitle2': '¡Bienvenido a FinanZap!',
         'onBoardingSubTitle2': 'Tu app personal para controlar tus finanzas de manera rápida y sencilla.',
         'onBoardingTitle3': 'Monitorea y Controla',
@@ -124,7 +119,6 @@ class AppLocalizationsEs extends AppLocalizations {
         'loginTitle': 'Bienvenido de nuevo,',
         'loginSubTitle': 'Descubra opciones ilimitadas y una comodidad inigualable.',
         'email': 'Correo electrónico',
-        'password': 'Contraseña',
         'rememberMe': 'Recuérdame',
         'forgetPassword': 'Recuperar contraseña?',
         'signIn': 'Iniciar sesión',

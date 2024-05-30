@@ -57,7 +57,6 @@ class AppLocalizationsEn extends AppLocalizations {
       {
         'incomeTitle': 'Income',
         'type_of_income': 'Type of Income',
-        'frequency': 'Frequency',
         'other': '',
       },
     );
@@ -87,11 +86,9 @@ class AppLocalizationsEn extends AppLocalizations {
       {
         'registerTitle': 'Register',
         'name': 'Full Name',
-        'email': 'E-Mail',
         'phone': 'Phone Number',
         'dob': 'Date of Birth',
         'currency': 'Preferred Currency',
-        'password': 'Password',
         'confirm_password': 'Confirm Password',
         'other': '',
       },
@@ -104,8 +101,6 @@ class AppLocalizationsEn extends AppLocalizations {
     String _temp0 = intl.Intl.selectLogic(
       name,
       {
-        'onBoardingTitle1': '',
-        'onBoardingSubTitle1': '',
         'onBoardingTitle2': 'Welcome to Finanzap',
         'onBoardingSubTitle2': 'Your personal app to control your finances quickly and easily!',
         'onBoardingTitle3': 'Monitor and Control',
