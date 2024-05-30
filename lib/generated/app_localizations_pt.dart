@@ -2,9 +2,9 @@ import 'package:intl/intl.dart' as intl;
 
 import 'app_localizations.dart';
 
-/// The translations for Spanish Castilian (`es`).
-class AppLocalizationsEs extends AppLocalizations {
-  AppLocalizationsEs([String locale = 'es']) : super(locale);
+/// The translations for Portuguese (`pt`).
+class AppLocalizationsPt extends AppLocalizations {
+  AppLocalizationsPt([String locale = 'pt']) : super(locale);
 
   @override
   String get title => 'Finanzap';
@@ -20,22 +20,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String login(String name) {
-    String _temp0 = intl.Intl.selectLogic(
-      name,
-      {
-        'loginTitle': 'Bienvenido de nuevo,',
-        'loginSubTitle': 'Descubra opciones ilimitadas y una comodidad inigualable.',
-        'email': 'Correo electrónico',
-        'password': 'Contraseña',
-        'rememberMe': 'Recuérdame',
-        'forgetPassword': 'Recuperar contraseña?',
-        'signIn': 'Iniciar sesión',
-        'createAccount': 'Crear cuenta',
-        'orSignInWith': 'O inicie sesión con',
-        'other': '',
-      },
-    );
-    return '$_temp0';
+    return 'Iniciar Sesión';
   }
 
   @override

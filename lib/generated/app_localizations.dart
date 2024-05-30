@@ -7,6 +7,8 @@ import 'package:intl/intl.dart' as intl;
 
 import 'app_localizations_en.dart';
 import 'app_localizations_es.dart';
+import 'app_localizations_it.dart';
+import 'app_localizations_pt.dart';
 
 /// Callers can lookup localized strings with an instance of AppLocalizations
 /// returned by `AppLocalizations.of(context)`.
@@ -90,7 +92,9 @@ abstract class AppLocalizations {
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
     Locale('en'),
-    Locale('es')
+    Locale('es'),
+    Locale('it'),
+    Locale('pt')
   ];
 
   /// No description provided for @title.
@@ -120,8 +124,8 @@ abstract class AppLocalizations {
   /// No description provided for @login.
   ///
   /// In es, this message translates to:
-  /// **'Iniciar Sesión'**
-  String get login;
+  /// **'{name, select, loginTitle{Bienvenido de nuevo,} loginSubTitle{Descubra opciones ilimitadas y una comodidad inigualable.} email{Correo electrónico} password{Contraseña} rememberMe{Recuérdame} forgetPassword{Recuperar contraseña?} signIn{Iniciar sesión} createAccount{Crear cuenta} orSignInWith{O inicie sesión con} other{}}'**
+  String login(String name);
 
   /// No description provided for @register.
   ///
@@ -236,6 +240,12 @@ abstract class AppLocalizations {
   /// In es, this message translates to:
   /// **'Historial'**
   String get history;
+
+  /// No description provided for @onboarding.
+  ///
+  /// In es, this message translates to:
+  /// **'{name, select, onBoardingTitle1{Elija su producto} onBoardingSubTitle1{Bienvenido a un mundo de opciones ilimitadas: ¡su producto perfecto le espera!} onBoardingTitle2{Seleccione el método de pago} onBoardingSubTitle2{Para realizar transacciones sin problemas, elija su forma de pago} onBoardingTitle3{Entrega a domicilio} onBoardingSubTitle3{¡Entrega rápida, segura y sin contacto!} other{}}'**
+  String onboarding(String name);
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
@@ -247,7 +257,7 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> 
   }
 
   @override
-  bool isSupported(Locale locale) => <String>['en', 'es'].contains(locale.languageCode);
+  bool isSupported(Locale locale) => <String>['en', 'es', 'it', 'pt'].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
@@ -260,6 +270,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
   switch (locale.languageCode) {
     case 'en': return AppLocalizationsEn();
     case 'es': return AppLocalizationsEs();
+    case 'it': return AppLocalizationsIt();
+    case 'pt': return AppLocalizationsPt();
   }
 
   throw FlutterError(

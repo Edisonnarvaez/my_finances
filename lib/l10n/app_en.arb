@@ -22,5 +22,8 @@
   "type_of_income": "Type of Income",
   "type_of_expense": "Type of Expense",
   "amount": "Amount",
-  "history": "History"
+  "history": "History",
+  "onboarding": "{name, select, onBoardingTitle1{ } onBoardingSubTitle1{ } onBoardingTitle2{Welcome to Finanzap} onBoardingSubTitle2{Your personal app to control your finances quickly and easily!} onBoardingTitle3{Monitor and Control} onBoardingSubTitle3{Record your income and expenses to keep detailed track of your finances.} other{}}",
+  "login": "{name, select, loginTitle{Welcome back,} loginSubTitle{Discover Limitless Choices and Unmatched Convenience.} email{E-Mail} password{Password} rememberMe{Remember Me} forgetPassword{Forget Password?} signIn{Sign In} createAccount{Create Account} orSignInWith{Or Sign in With} other{}}"
+
 }

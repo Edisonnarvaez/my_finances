@@ -2,9 +2,9 @@ import 'package:intl/intl.dart' as intl;
 
 import 'app_localizations.dart';
 
-/// The translations for English (`en`).
-class AppLocalizationsEn extends AppLocalizations {
-  AppLocalizationsEn([String locale = 'en']) : super(locale);
+/// The translations for Italian (`it`).
+class AppLocalizationsIt extends AppLocalizations {
+  AppLocalizationsIt([String locale = 'it']) : super(locale);
 
   @override
   String get title => 'Finanzap';
@@ -20,22 +20,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String login(String name) {
-    String _temp0 = intl.Intl.selectLogic(
-      name,
-      {
-        'loginTitle': 'Welcome back,',
-        'loginSubTitle': 'Discover Limitless Choices and Unmatched Convenience.',
-        'email': 'E-Mail',
-        'password': 'Password',
-        'rememberMe': 'Remember Me',
-        'forgetPassword': 'Forget Password?',
-        'signIn': 'Sign In',
-        'createAccount': 'Create Account',
-        'orSignInWith': 'Or Sign in With',
-        'other': '',
-      },
-    );
-    return '$_temp0';
+    return 'Login';
   }
 
   @override
@@ -100,12 +85,12 @@ class AppLocalizationsEn extends AppLocalizations {
     String _temp0 = intl.Intl.selectLogic(
       name,
       {
-        'onBoardingTitle1': ' ',
-        'onBoardingSubTitle1': ' ',
-        'onBoardingTitle2': 'Welcome to Finanzap',
-        'onBoardingSubTitle2': 'Your personal app to control your finances quickly and easily!',
-        'onBoardingTitle3': 'Monitor and Control',
-        'onBoardingSubTitle3': 'Record your income and expenses to keep detailed track of your finances.',
+        'onBoardingTitle1': 'Elija su producto',
+        'onBoardingSubTitle1': 'Bienvenido a un mundo de opciones ilimitadas: ¡su producto perfecto le espera!',
+        'onBoardingTitle2': 'Seleccione el método de pago',
+        'onBoardingSubTitle2': 'Para realizar transacciones sin problemas, elija su forma de pago',
+        'onBoardingTitle3': 'Entrega a domicilio',
+        'onBoardingSubTitle3': '¡Entrega rápida, segura y sin contacto!',
         'other': '',
       },
     );

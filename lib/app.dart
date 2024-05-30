@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:my_finances/modules/authentication/screens/onboarding/onboarding.dart';
+import 'package:my_finances/screens/onboarding.dart';
 import 'package:my_finances/utils/theme/theme.dart';
 
 //import 'package:app_mobile/utils/theme/theme.dart';
@@ -16,7 +17,7 @@ class App extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
-      home: const OnBoardingScreen(),
+      home: OnBoardingScreen(),
     );
   }
 }
