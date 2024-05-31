@@ -1,4 +1,12 @@
 {
-    "appTitle": "My app",
-    "content": "Hello"
+  "date": "Date",
+  "common": "{name, select, amount{Amount} save{Save} cancel{Cancel} other{}}",
+  "expense": "{name, select, expenseTitle{Expense} type_of_expense{Type of Expense} other{}}",
+  "recurring_expense": "{name, select, recurringExpenseTitle{Recurring Expense} type_of_expense{Type of Expense} frequency{Frequency} other{}}",
+  "income": "{name, select, incomeTitle{Income} type_of_income{Type of Income} other{}}",
+  "main": "{name, select, mainTitle{Main Menu} income{Income} recurring_expense{Recurring Expense} expense{Expense} history{History} other{}}",
+  "register": "{name, select, registerTitle{Register} name{Full Name} phone{Phone Number} dob{Date of Birth} currency{Preferred Currency} confirm_password{Confirm Password} other{}}",
+  "onboarding": "{name, select, onBoardingTitle2{Welcome to Finanzap} onBoardingSubTitle2{Your personal app to control your finances quickly and easily!} onBoardingTitle3{Monitor and Control} onBoardingSubTitle3{Record your income and expenses to keep detailed track of your finances.} other{}}",
+  "login": "{name, select, loginTitle{Welcome back,} loginSubTitle{Discover Limitless Choices and Unmatched Convenience.} email{E-Mail} password{Password} rememberMe{Remember Me} forgetPassword{Forget Password?} signIn{Sign In} createAccount{Create Account} orSignInWith{Or Sign in With} other{}}"
 }
+

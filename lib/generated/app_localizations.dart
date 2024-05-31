@@ -93,17 +93,59 @@ abstract class AppLocalizations {
     Locale('es')
   ];
 
-  /// No description provided for @appTitle.
+  /// No description provided for @date.
   ///
   /// In es, this message translates to:
-  /// **'Mi Aplicacion'**
-  String get appTitle;
+  /// **'Fecha'**
+  String get date;
 
-  /// No description provided for @content.
+  /// No description provided for @common.
   ///
   /// In es, this message translates to:
-  /// **'Hola'**
-  String get content;
+  /// **'{name, select, amount{Monto} save{Guardar} cancel{Cancelar} other{}}'**
+  String common(String name);
+
+  /// No description provided for @expense.
+  ///
+  /// In es, this message translates to:
+  /// **'{name, select, expenseTitle{Gastos} type_of_expense{Tipo de Gasto} other{}}'**
+  String expense(String name);
+
+  /// No description provided for @recurring_expense.
+  ///
+  /// In es, this message translates to:
+  /// **'{name, select, recurringExpenseTitle{Gastos Periódicos} type_of_expense{Tipo de Gasto Periódico} frequency{Periodicidad} other{}}'**
+  String recurring_expense(String name);
+
+  /// No description provided for @income.
+  ///
+  /// In es, this message translates to:
+  /// **'{name, select, incomeTitle{Ingresos} type_of_income{Tipo de Ingreso} other{}}'**
+  String income(String name);
+
+  /// No description provided for @main.
+  ///
+  /// In es, this message translates to:
+  /// **'{name, select, mainTitle{Menú Principal} income{Ingresos} recurring_expense{Gastos Periódicos} expense{Gastos} history{Historial} other{}}'**
+  String main(String name);
+
+  /// No description provided for @register.
+  ///
+  /// In es, this message translates to:
+  /// **'{name, select, registerTitle{Registrarse} name{Nombre Completo} phone{Número de Teléfono} dob{Fecha de Nacimiento} currency{Moneda Preferida} confirm_password{Confirmar Contraseña} other{}}'**
+  String register(String name);
+
+  /// No description provided for @onboarding.
+  ///
+  /// In es, this message translates to:
+  /// **'{name, select, onBoardingTitle2{¡Bienvenido a FinanZap!} onBoardingSubTitle2{Tu app personal para controlar tus finanzas de manera rápida y sencilla.} onBoardingTitle3{Monitorea y Controla} onBoardingSubTitle3{Registra tus ingresos y gastos para mantener un seguimiento detallado de tus finanzas.} other{}}'**
+  String onboarding(String name);
+
+  /// No description provided for @login.
+  ///
+  /// In es, this message translates to:
+  /// **'{name, select, loginTitle{Bienvenido de nuevo,} loginSubTitle{Descubra opciones ilimitadas y una comodidad inigualable.} email{Correo electrónico} rememberMe{Recuérdame} forgetPassword{Recuperar contraseña?} signIn{Iniciar sesión} createAccount{Crear cuenta} orSignInWith{O inicie sesión con} other{}}'**
+  String login(String name);
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

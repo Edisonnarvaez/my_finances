@@ -13,12 +13,11 @@ dependencies:
 
   # Utility Packages
   http: ^1.2.0
-  intl: ^0.18.1
+  intl: ^0.19.0
   logger: ^2.1.0
   url_launcher: ^6.2.4
   smooth_page_indicator: ^1.1.0
-  flutter_localizations:
-    sdk: flutter
+  flutter_localization: ^0.2.0
 
   # Icons
   iconsax: ^0.0.8
@@ -27,8 +26,11 @@ dependencies:
   # State Management
   get: ^4.6.6
   get_storage: ^2.1.1
+  flutter_svg: ^2.0.10+1
   cloud_firestore: ^4.17.3
   firebase_core: ^2.31.0
+  firebase_auth: ^4.20.0
+  syncfusion_flutter_charts: ^25.2.6
 
 # ---------- PACKAGES DEV ----------
 dev_dependencies:
@@ -38,12 +40,14 @@ dev_dependencies:
   flutter_lints: ^3.0.0
 
 flutter:
+  generate: true
   uses-material-design: true
 
   # ---------- LOCAL ASSETS ----------
   assets:
     - assets/icons/
     - assets/images/on_boarding_images/
+    - assets/images/
 
   # ---------- LOCAL FONTS ----------
   fonts:

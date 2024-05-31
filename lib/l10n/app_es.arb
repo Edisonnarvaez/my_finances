@@ -1,4 +1,12 @@
 {
-    "appTitle": "Mi Aplicacion", 
-    "content": "Hola"
-}    
+  "date": "Fecha",
+  "common": "{name, select, amount{Monto} save{Guardar} cancel{Cancelar} other{}}",
+  "expense": "{name, select, expenseTitle{Gastos} type_of_expense{Tipo de Gasto} other{}}",
+  "recurring_expense": "{name, select, recurringExpenseTitle{Gastos Periódicos} type_of_expense{Tipo de Gasto Periódico} frequency{Periodicidad} other{}}",
+  "income": "{name, select, incomeTitle{Ingresos} type_of_income{Tipo de Ingreso} other{}}",
+  "main": "{name, select, mainTitle{Menú Principal} income{Ingresos} recurring_expense{Gastos Periódicos} expense{Gastos} history{Historial} other{}}",
+  "register": "{name, select, registerTitle{Registrarse} name{Nombre Completo} phone{Número de Teléfono} dob{Fecha de Nacimiento} currency{Moneda Preferida} confirm_password{Confirmar Contraseña} other{}}",
+  "onboarding": "{name, select, onBoardingTitle2{¡Bienvenido a FinanZap!} onBoardingSubTitle2{Tu app personal para controlar tus finanzas de manera rápida y sencilla.} onBoardingTitle3{Monitorea y Controla} onBoardingSubTitle3{Registra tus ingresos y gastos para mantener un seguimiento detallado de tus finanzas.} other{}}",
+  "login": "{name, select, loginTitle{Bienvenido de nuevo,} loginSubTitle{Descubra opciones ilimitadas y una comodidad inigualable.} email{Correo electrónico} rememberMe{Recuérdame} forgetPassword{Recuperar contraseña?} signIn{Iniciar sesión} createAccount{Crear cuenta} orSignInWith{O inicie sesión con} other{}}"
+}
+
