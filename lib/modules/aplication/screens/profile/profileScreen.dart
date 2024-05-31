@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:my_finances/modules/authentication/screens/login/changePasswordScreen.dart';
+import 'package:my_finances/utils/constants/text_strings.dart';
 
 class ProfileScreen extends StatelessWidget {
   @override
@@ -26,22 +27,22 @@ class ProfileScreen extends StatelessWidget {
             SizedBox(height: 20),
             TextField(
               decoration: InputDecoration(
-                labelText: 'full_name'.tr,
+                labelText: AppText.name,
               ),
             ),
             TextField(
               decoration: InputDecoration(
-                labelText: 'email'.tr,
+                labelText: AppText.email,
               ),
             ),
             TextField(
               decoration: InputDecoration(
-                labelText: 'phone_number'.tr,
+                labelText: AppText.phone,
               ),
             ),
             TextField(
               decoration: InputDecoration(
-                labelText: 'date_of_birth'.tr,
+                labelText: AppText.dob,
               ),
             ),
             SizedBox(height: 20),
@@ -65,7 +66,7 @@ class ProfileScreen extends StatelessWidget {
               onPressed: () {
                 // Save profile changes logic
               },
-              child: Text('save'.tr),
+              child: Text(AppText.save),
             ),
             SizedBox(height: 20),
             ElevatedButton(

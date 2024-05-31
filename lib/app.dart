@@ -20,7 +20,7 @@ class App extends StatelessWidget {
       home: OnBoardingScreen(),
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      locale: const Locale('en', ''), // TODO: put here status management
+      locale: const Locale('es', ''), // TODO: put here status management
       // locale: const Locale('en', ''),
     );
   }

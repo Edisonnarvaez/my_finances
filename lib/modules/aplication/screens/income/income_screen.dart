@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:my_finances/utils/constants/text_strings.dart';
 
 class IncomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('income'.tr),
+        title: Text(AppText.income),
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
@@ -22,10 +23,10 @@ class IncomeScreen extends StatelessWidget {
               decoration: InputDecoration(labelText: 'date'.tr),
             ),
             TextField(
-              decoration: InputDecoration(labelText: 'type_of_income'.tr),
+              decoration: InputDecoration(labelText: AppText.type_of_income),
             ),
             TextField(
-              decoration: InputDecoration(labelText: 'amount'.tr),
+              decoration: InputDecoration(labelText: AppText.amount),
             ),
             SizedBox(height: 20),
             Row(
@@ -35,13 +36,13 @@ class IncomeScreen extends StatelessWidget {
                   onPressed: () {
                     // Save logic
                   },
-                  child: Text('save'.tr),
+                  child: Text(AppText.save),
                 ),
                 ElevatedButton(
                   onPressed: () {
                     Get.back();
                   },
-                  child: Text('cancel'.tr),
+                  child: Text(AppText.cancel),
                 ),
               ],
             ),

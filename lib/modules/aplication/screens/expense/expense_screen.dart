@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:my_finances/utils/constants/text_strings.dart';
 
 class ExpenseScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('expense'.tr),
+        title: Text(AppText.expense),
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
@@ -22,10 +23,10 @@ class ExpenseScreen extends StatelessWidget {
               decoration: InputDecoration(labelText: 'date'.tr),
             ),
             TextField(
-              decoration: InputDecoration(labelText: 'type_of_expense'.tr),
+              decoration: InputDecoration(labelText: AppText.type_of_expense),
             ),
             TextField(
-              decoration: InputDecoration(labelText: 'amount'.tr),
+              decoration: InputDecoration(labelText: AppText.amount),
             ),
             SizedBox(height: 20),
             Row(
@@ -35,13 +36,13 @@ class ExpenseScreen extends StatelessWidget {
                   onPressed: () {
                     // Save logic
                   },
-                  child: Text('save'.tr),
+                  child: Text(AppText.save),
                 ),
                 ElevatedButton(
                   onPressed: () {
                     Get.back();
                   },
-                  child: Text('cancel'.tr),
+                  child: Text(AppText.cancel),
                 ),
               ],
             ),
@@ -50,7 +51,7 @@ class ExpenseScreen extends StatelessWidget {
                 itemCount: 10,
                 itemBuilder: (context, index) {
                   return ListTile(
-                    title: Text('Expense $index'),
+                    title: Text('AppText.expense $index'),
                     subtitle: Text('Details of the expense'),
                     trailing: Row(
                       mainAxisSize: MainAxisSize.min,

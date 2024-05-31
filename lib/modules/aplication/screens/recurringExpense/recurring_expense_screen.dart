@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:my_finances/utils/constants/text_strings.dart';
 
 class RecurringExpenseScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('recurring_expense'.tr),
+        title: Text(AppText.recurringExpenseTitle),
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
