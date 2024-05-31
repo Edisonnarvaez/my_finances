@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:my_finances/modules/authentication/screens/profile/profileScreen.dart';
-import 'package:my_finances/modules/authentication/screens/expense/expense_screen.dart';
-import 'package:my_finances/modules/authentication/screens/income/income_screen.dart';
-import 'package:my_finances/modules/authentication/screens/recurringExpense/recurring_expense_screen.dart';
+import 'package:my_finances/modules/aplication/screens/profile/profileScreen.dart';
+import 'package:my_finances/modules/aplication/screens/expense/expense_screen.dart';
+import 'package:my_finances/modules/aplication/screens/income/income_screen.dart';
+import 'package:my_finances/modules/aplication/screens/recurringExpense/recurring_expense_screen.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
 class HomeScreen extends StatelessWidget {

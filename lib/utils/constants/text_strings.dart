@@ -26,8 +26,10 @@ class AppText {
       AppLocalizations.of(Get.context!).login('loginSubTitle');
 
   // -- Authentication Forms
-  static String email = AppLocalizations.of(Get.context!).login('email');
-  static String password = AppLocalizations.of(Get.context!).login('password');
+  static String email = 
+      AppLocalizations.of(Get.context!).login('email');
+  static String password = 
+      AppLocalizations.of(Get.context!).login('password');
   static String rememberMe =
       AppLocalizations.of(Get.context!).login('rememberMe');
   static String forgetPassword =

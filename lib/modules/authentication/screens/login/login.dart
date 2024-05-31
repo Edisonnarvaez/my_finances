@@ -1,5 +1,6 @@
 import 'package:my_finances/common/styles/spacing_styles.dart';
 import 'package:my_finances/common/widgets/login_sign_up/form_divider.dart';
+import 'package:my_finances/modules/aplication/screens/home/home.dart';
 // import 'package:app_mobile/common/widgets/login_sign_up/social_buttons.dart';
 // import 'package:app_mobile/modules/authentication/screens/login/widgets/login_form.dart';
 import 'package:my_finances/modules/authentication/screens/login/widgets/login_header.dart';
@@ -33,7 +34,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
     if (user != null) {
       print('Usuario si existe');
-      Get.to(const ListProduct());
+      Get.to( HomeScreen());
     } else {
       // ignore: use_build_context_synchronously
       ScaffoldMessenger.of(context).showSnackBar(

@@ -11,7 +11,7 @@ class AppImage {
       "assets/images/on_boarding_images/imagen_onb3.gif";
 
         // -- App Logos
-  static const String onLogo = "assets/logos/logo.svg";
+  static const String onLogo = "assets/logos/finanzap.svg";
 
   //fondo 
   static const String fondo = "assets/images/fondo.png";
