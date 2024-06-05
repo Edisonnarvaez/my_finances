@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:my_finances/modules/aplication/screens/profile/profileScreen.dart';
+import 'package:my_finances/modules/aplication/screens/home/widgets/myAppDrawer.dart';
 import 'package:my_finances/modules/aplication/screens/expense/expense_screen.dart';
 import 'package:my_finances/modules/aplication/screens/income/income_screen.dart';
 import 'package:my_finances/modules/aplication/screens/recurringExpense/recurring_expense_screen.dart';
+import 'package:my_finances/utils/constants/text_strings.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -21,38 +22,8 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-      drawer: Drawer(
-        child: ListView(
-          children: [
-            UserAccountsDrawerHeader(
-              accountName: Text("User Name"),
-              accountEmail: Text("user@example.com"),
-            ),
-            ListTile(
-              leading: Icon(Icons.nightlight_round),
-              title: Text("Dark Mode"),
-              onTap: () {
-                // Toggle dark mode
-              },
-            ),
-            ListTile(
-              leading: Icon(Icons.language),
-              title: Text("Change Language"),
-              onTap: () {
-                // Change language
-              },
-            ),
-            ListTile(
-              leading: Icon(Icons.person),
-              title: Text("Profile"),
-              onTap: () {
-                Get.to(ProfileScreen());
-              },
-            ),
-            // Add other menu options here
-          ],
-        ),
-      ),
+      drawer: MyAppDrawer(),
+
       body: Column(
         children: [
           Expanded(
@@ -69,21 +40,21 @@ class HomeScreen extends StatelessWidget {
                           Get.to(IncomeScreen());
                         },
                       ),
-                      Text('income'.tr),
+                      Text(AppText.income),
                       IconButton(
                         icon: Icon(Icons.remove),
                         onPressed: () {
                           Get.to(ExpenseScreen());
                         },
                       ),
-                      Text('expense'.tr),
+                      Text(AppText.expense),
                       IconButton(
                         icon: Icon(Icons.repeat),
                         onPressed: () {
                           Get.to(RecurringExpenseScreen());
                         },
                       ),
-                      Text('recurring_expense'.tr),
+                      Text(AppText.recurringExpenseTitle),
                     ],
                   ),
                 ),
