@@ -1,7 +1,7 @@
 //import 'package:app_mobile/modules/authentication/screens/login/login.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:my_finances/modules/aplication/screens/home/home.dart';
+//import 'package:my_finances/modules/aplication/screens/home/home.dart';
 import 'package:my_finances/modules/authentication/screens/login/login.dart';
 
 class OnBoardingController extends GetxController {
@@ -21,7 +21,7 @@ class OnBoardingController extends GetxController {
 
   void nextPage() {
     if (currentPageIndex.value == 2) {
-      Get.to(() => HomeScreen());
+      Get.to(() => LoginScreen());
       //Get.to(const LoginScreen());
     } else {
       int page = currentPageIndex.value + 1;

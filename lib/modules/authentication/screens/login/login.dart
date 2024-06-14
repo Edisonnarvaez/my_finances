@@ -15,7 +15,7 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class LoginScreen extends StatefulWidget {
-  const LoginScreen({super.key});
+  //const LoginScreen({super.key});
 
   @override
   State<LoginScreen> createState() => _LoginScreenState();
