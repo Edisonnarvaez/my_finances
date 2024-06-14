@@ -22,7 +22,7 @@ class OnBoardingController extends GetxController {
   void nextPage() {
     if (currentPageIndex.value == 2) {
       Get.to(() => LoginScreen());
-      //Get.to(const LoginScreen());
+      //Get.to(const LoginScreen()); no lleva el const por que esta tiene que ser dinamica
     } else {
       int page = currentPageIndex.value + 1;
       pageController.jumpToPage(page);
